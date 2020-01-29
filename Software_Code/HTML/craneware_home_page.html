@@ -17,35 +17,63 @@
 <!-- search options left-->
   <div class="container-fluid">
     <h1 style="text-align:center">Craneware</h1>
+
+    <hr>
+
     <div class="row">
 
       <!-- Search location-->
-      <div class = "col-sm-4">
+      <div class = "col-sm-5">
         <div class="md-form mt-0">
           <!-- Search bar -->
           <p style ="height:15px;"> </p>
-          <input class="form-control" type="text" placeholder="Search by location..." aria-label="Search">
+          <div class="input-group mt-3 mb-3">
+            <div class="input-group-prepend">
+
+              <!-- Script to change the location type -->
+              <script>
+              function switchLocationSearchType(selection) {
+                var selectedType = selection;
+                document.getElementById("selectedType").innerHTML = selectedType;
+              }
+              </script>
+
+
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                <a id="selectedType"> </a>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="switchLocationSearchType('Zip')">Zip Code</a>
+                <a class="dropdown-item" onclick="switchLocationSearchType('Address')">Address</a>
+                <a class="dropdown-item" onclick="switchLocationSearchType('State')">State</a>
+
+              </div>
+            </div>
+            <input type="text" class="form-control" placeholder="Search by location...">
+          </div>
           <p style ="height:15px;"> </p>
 
           <!-- Search procedure -->
           <div class="md-form mt-0">
-            <input class="form-control" type="text" placeholder="Search by procedure..." aria-label="Search">
+            <input class="form-control" type="text" placeholder="Search by procedure..." aria-label="Search" id="procedureInput">
           </div>
           <p style ="height:15px;"> </p>
 
           <!-- Search code -->
           <div class="md-form mt-0">
-            <input class="form-control" type="text" placeholder="Search by procedure code..." aria-label="Search">
+            <input class="form-control" type="text" placeholder="Search by procedure code..." aria-label="Search" id="codeInput">
           </div>
         </div>
         <p style ="height:15px;"> </p>
 
-        <p style = "text-align:center;"><button type="button" class="btn btn-outline-primary" style="width:220px">Search</button></p>
+        <p style = "text-align:center;"><button type="submit" class="btn btn-outline-primary" style="width:220px">Search</button></p>
         <p></p>
       </div>
 
+
+
       <!-- search options right -->
-      <div class="col-sm-8">
+      <div class="col-sm-7">
         <h4>Filters:</h4>
 
         <!-- dropdown select price range -->
@@ -62,9 +90,8 @@
 
           <p></p>
 
+
           <!-- dropdown select distance range -->
-
-
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Maximum Distance..." aria-label="Maximum Distance" aria-describedby="basic-addon2">
           <div class="input-group-append">
@@ -143,6 +170,15 @@
               <p>001 - HEART TRANSPLANT OR IMPLANT OF HEART ASSIST SYSTEM W MCC</p>
               <p>Average medical care payments: $121763.31</p>
             </div>
+
+
+            <script>
+
+            function
+
+
+
+            </script>
 
           </div>
 
