@@ -1,4 +1,5 @@
- Sprint 1 All information about the first sprint can be found in this folder.
+ #Sprint 1 
+ All information about the first sprint can be found in this folder.
 
 # Day [1] - Scrum Meeting summary
 
