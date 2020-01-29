@@ -1,6 +1,6 @@
-Sprint 1 All information about your first sprint can be found in this folder.
+# Sprint 1 All information about your first sprint can be found in this folder.
 
-Day [1] - Scrum Meeting summary
+# Day [1] - Scrum Meeting summary
 
 
 The Scrum Master for this meeting was Tony Wright
@@ -26,7 +26,7 @@ Jodie, has completed one of her assigned tasks, Create function to restrict sear
 Michael, has begin work on implementing a map into the website, which will hopefully be ready to implement tomorrow
 We also discussed using a database to store and filter the data and added relevant tasks to the product backlog
 
-Day [2] - Scrum Meeting summary
+# Day [2] - Scrum Meeting summary
 
 
 The Scrum Master for this meeting was Tony Wright
@@ -51,3 +51,32 @@ Benjamin - Has completed the majority of assigned tasks, just 'Create an order b
 Dimitar - Has been assigned to work with Tony and Joel on displaying the search results, also the task 'Display a combination of search results in one list'
 
 As everything is on track, the goal for tomorrow is to start intergrating the search algorithms into the website to test with the database.
+
+
+# Day [3] - Scrum Meeting summary
+
+
+The Scrum Master for this meeting was Tony Wright
+
+
+Members Present: Michael, Jodie, Tony, Dimitar, Ben
+
+
+Members Not Present: Joel
+
+
+Summary of Conversation: 
+
+Initialially, scrum master reminded the group of the pair programming videos needed to be recorded (also a reminder of what they consist of) and a reminder of the plan to record the meeting tomorrow,
+
+Jodie - Completed uploading all the data to the database, currently working on testing and refining stored procedures and testing search results
+
+Michael - completed code for the Map, ready to test with the newly imported data, aim for the end of the day is to have the map working with the data and intergrate tomorrow.
+
+Benjamin - Continuing work on the 'Create an order by distance function', taking longer than expected, however good progress is being made. Aims for the code to be complete by the end of the day, and to be ready for intergration tomorrow
+
+Dimitar - Research on connecting the HTML and Java, intergration method to be completed by the end of the day
+
+Tony - Continuing to work on front end HTML, dynamic display of data from search results (to be completed by the end of the day) and passing input from the user to the database
+
+
