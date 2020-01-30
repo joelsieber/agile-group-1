@@ -34,7 +34,10 @@ public class main{
         }
         for(int i = 0; i < list.length; i++){
             if(found[i] == true){
-                System.out.println(list[i][1] + "/" + list[i][2] + "/" + list[i][3] + "/" + list[i][4]+ "/" + list[i][5] + "/" + list[i][6] + "/" + list[i][7]);
+                for(int j = 0; j < list[i].length; j++){
+                    System.out.print(list[i][j]);
+                    System.out.println();
+                }
             }
         }
     }
@@ -45,13 +48,16 @@ public class main{
         Arrays.fill(found, Boolean.FALSE);
         
         for(int i = 0; i < list.length; i++){
-            if(list[i][7].toUpperCase().contains(query.toUpperCase())){//Searches through the state and city field.
+            if(list[i][7].toUpperCase().contains(query.toUpperCase())){//Searches through the HRR field.
                 found[i] = true;
             }
         }
         for(int i = 0; i < list.length; i++){
             if(found[i] == true){
-                System.out.println(list[i][1] + "/" + list[i][2] + "/" + list[i][3] + "/" + list[i][4]+ "/" + list[i][5] + "/" + list[i][6] + "/" + list[i][7]);
+                for(int j = 0; j < list[i].length; j++){
+                    System.out.print(list[i][j]);
+                    System.out.println();
+                }
             }
         }
     }
@@ -168,9 +174,9 @@ public class main{
     public void printMultiArray(String[][] array){
         for(int i = 0; i < array.length; i++){
             for(int j = 0; j < array[i].length; j++){
-                System.out.print("/" + array[i][j] + "/");
+                System.out.print(array[i][j]);
+                System.out.println();
             }
-            System.out.println();
         }
     }
     
