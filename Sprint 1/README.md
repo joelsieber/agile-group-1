@@ -81,3 +81,25 @@ Dimitar - Research on connecting the HTML and Java, intergration method to be co
 Tony - Continuing to work on front end HTML, dynamic display of data from search results (to be completed by the end of the day) and passing input from the user to the database
 
 
+# Day [3] - Scrum Meeting summary
+
+
+The Scrum Master for this meeting was Tony Wright
+
+
+Members Present: Michael, Jodie, Tony, Joel, Ben
+
+
+Members Not Present: Dimitar
+
+
+Summary of Conversation:
+
+Joel -
+
+jodie - soted procedures called parse 
+
+Michael - Problems working on the database working with 
+
+distance function working, working on merging together
+
