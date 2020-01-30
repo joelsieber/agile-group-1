@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Record
+comment0.text=\r\n\r\n\ @author\ jodielaurenson\r\n
+comment1.params=location\ price\ zip
+comment1.target=Record(java.lang.String,\ float,\ int)
+comment1.text=\r\n\ \ \ \ String\ DRGDefinition;\r\n\ \ \ \ int\ providerID;\r\n\ \ \ \ String\ providerName;\r\n\ \ \ \ String\ providerStreetAddress;\r\n\ \ \ \ String\ providerCity;\r\n\ \ \ \ String\ providerState;\r\n\ \ \ \ int\ providerZipCode;\r\n\ \ \ \ String\ HRRDescription;\r\n\ \ \ \ int\ totalDischarges;\r\n\ \ \ \ double\ avgCoveredCharges;\r\n\ \ \ \ double\ avgTotalPayments;\r\n\ \ \ \ double\ avgMedicarePayments;\r\n\ \ \ \ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getLocation()
+comment3.params=location
+comment3.target=void\ setLocation(java.lang.String)
+comment4.params=
+comment4.target=float\ getPrice()
+comment5.params=price
+comment5.target=void\ setPrice(float)
+comment6.params=location\ price\ zip
+comment6.target=void\ setData(java.lang.String,\ float,\ int)
+numComments=7

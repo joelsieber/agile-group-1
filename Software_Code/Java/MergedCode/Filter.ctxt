@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Filter
+comment0.text=\r\n\r\n\ @author\ jodielaurenson\r\n
+comment1.params=records\ min\ max
+comment1.target=agilejava.Record[]\ restrictToPrice(agilejava.Record[],\ double,\ double)
+comment1.text=\r\n\ this\ method\ takes\ in\ all\ records\ and\ uses\ the\ min\ and\ max\ parameters\r\n\ to\ filter\ the\ array\ and\ returns\ a\ new\ array\ with\ records\ with\ prices\r\n\ between\ the\ min\ and\ max\r\n\ \r\n\ @param\ records\ the\ array\ of\ records,\ contains\ all\ data\r\n\ @param\ min\ the\ minimum\ price\ given\ by\ the\ user\r\n\ @param\ max\ the\ maximum\ price\ given\ by\ the\ user\r\n\ @return\ an\ array\ of\ records\ only\ between\ the\ given\ price\ range\r\n
+comment2.params=currentLocation\ targetLocation
+comment2.target=double\ calculateDistance(agilejava.Location,\ agilejava.Location)
+comment2.text=\r\n\ This\ method\ uses\ the\ Haversine\ formula\ to\ calculate\ the\ distance\ between\ \r\n\ two\ points\ given\ the\ longitude\ and\ latitude.\ The\ equation\ was\ taken\ from\r\n\ https\://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula\r\n\ \r\n\ @param\ currentLocation\ the\ location\ of\ the\ user\ stored\ in\ an\ object\r\n\ @param\ targetLocation\ the\ location\ of\ the\ target,\ stored\ in\ an\ object\r\n\ @return\ the\ distance\ between\ the\ two\ points\ in\ kilometres\r\n
+comment3.params=currentLocation\ range\ locations
+comment3.target=agilejava.Location[]\ filterByLocation(agilejava.Location,\ int,\ agilejava.Location[])
+comment3.text=\r\n\ goes\ through\ all\ records\ and\ returns\ all\ within\ the\ distance\ range\r\n\ \r\n\ @param\ currentLocation\ location\ of\ the\ user\r\n\ @param\ range\ maximum\ distance\ in\ kilometres\ the\ user\ wants\ displayed\r\n\ @param\ locations\ all\ records\r\n\ @return\ \r\n
+comment4.params=zip\ locations
+comment4.target=agilejava.Location\ getCurrentLocation(int,\ agilejava.Location[])
+comment4.text=public\ void\ searchLongAndLat(int\ zip,\ Location[]\ locations,\ Record[]\ records){\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ locations.length;\ i++){\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(locations[i].getZip()\=\=zip){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ calculateDistance(locations[i],\ )\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment5.params=records
+comment5.target=boolean\ isEmpty(agilejava.Record[])
+comment5.text=\r\n\ checks\ if\ record\ array\ is\ null\ or\ not\r\n\ \r\n\ @param\ records\ array\ of\ records\ to\ compare\r\n\ @return\ true\ if\ empty\ and\ false\ if\ not\ empty\r\n
+numComments=6
