@@ -81,7 +81,7 @@ Dimitar - Research on connecting the HTML and Java, intergration method to be co
 Tony - Continuing to work on front end HTML, dynamic display of data from search results (to be completed by the end of the day) and passing input from the user to the database
 
 
-# Day [3] - Scrum Meeting summary
+# Day [4] - Scrum Meeting summary
 
 
 The Scrum Master for this meeting was Tony Wright
@@ -95,11 +95,21 @@ Members Not Present: Dimitar
 
 Summary of Conversation:
 
-Joel -
+Joel - Has started working on connnecting HTML with Java, progress made and solutions have been found, however not yet debugged. Will continue working on a solution to be completed ASAP ready for intergration with Java classes.
 
-jodie - soted procedures called parse 
+jodie - soted procedures called using Java - Having trouble parsing the data recieved from the database - will continue working on connnecting the java with SQL
 
-Michael - Problems working on the database working with 
+Michael - Map implementation with database input data, problems occured with the database working with the map, because of the large dataset. Will continue working on and testing the functionality
 
-distance function working, working on merging together
+Benjamin - Distance function working, currently working on merging the Java class together ready for intergration.
+
+Tony - Completed a template for displaying the data on the website in the right format, problems occured with lack of experience using bootstrap and javascript, although they are all fixed now. To continue with priority work, helping Joel connect the HTML and java
+
+Plan of action to merge all parts of the project so far:
+
+Jodie and Ben, combine all Java classes into 1 that can be called by the HTML submit request
+
+Tony and Joel, debug method of connecting HTML and Java classes
+
+Michael, complete template for linking the pinned locations to the search results
 
