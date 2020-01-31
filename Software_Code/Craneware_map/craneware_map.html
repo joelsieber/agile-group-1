@@ -1,0 +1,104 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Craneware Hospital Locations</title>
+    <style>
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window.
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      } */
+    </style>
+  </head>
+
+<html>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      var customLabel =
+      {
+        hospital:
+         {
+          label: 'H'
+        },
+      };
+
+        function initMap()
+        {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: new google.maps.LatLng(37.0902° N, 95.7129° W),
+          zoom: 5
+        });
+        var infoWindow = new google.maps.InfoWindow;
+
+          // Specify XML or PHP file in the ''
+          downloadUrl('', function(data)
+          {
+            var xml = data.responseXML;
+            var placeHolder = xml.documentElement.getElementsByTagName('placeHolder');
+            Array.prototype.forEach.call(placeHolders, function(placeHolderElem) {
+              var id = placeHolderElem.getAttribute('id');
+              var name = placeHolderElem.getAttribute('name');
+              var address = placeHolderElem.getAttribute('address');
+              var price = placeHolderElem.getAttribute('price');
+              var point = new google.maps.LatLng(
+                  parseFloat(placeHolderElem.getAttribute('lat')),
+                  parseFloat(placeHolderElem.getAttribute('lng')));
+
+              var infowincontent = document.createElement('div');
+              var strong = document.createElement('strong');
+              strong.textContent = name
+              infowincontent.appendChild(strong);
+              infowincontent.appendChild(document.createElement('br'));
+
+              var text = document.createElement('text');
+              text.textContent = address
+              infowincontent.appendChild(text);
+              var num = document.createElement('num');
+              text.textContent = price
+              infowincontent.appendChild(num);
+              var icon = customLabel[name] || {};
+              var marker = new google.maps.Marker({
+                map: map,
+                position: point,
+                label: icon.label
+              });
+              marker.addListener('click', function() {
+                infoWindow.setContent(infowincontent);
+                infoWindow.open(map, placeHolder);
+              });
+            });
+          });
+        }
+
+
+
+      function downloadUrl(url, callback) {
+        var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request, request.status);
+          }
+        };
+
+        request.open('GET', url, true);
+        request.send(null);
+      }
+
+      function doNothing() {}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3A17AWvzzEINxntJtWxUogtG2MzTs3dM&callback=initMap">
+    </script>
+  </body>
+</html>
