@@ -87,7 +87,7 @@ Tony - Continuing to work on front end HTML, dynamic display of data from search
 The Scrum Master for this meeting was Tony Wright
 
 
-Members Present: Michael, Jodie, Tony, Joel, Ben
+prepare back end search results for the demonstrationMembers Present: Michael, Jodie, Tony, Joel, Ben
 
 
 Members Not Present: Dimitar
@@ -113,3 +113,40 @@ Tony and Joel, debug method of connecting HTML and Java classes
 
 Michael, complete template for linking the pinned locations to the search results
 
+
+# Day [5] - Scrum Meeting summary
+
+
+The Scrum Master for this meeting was Tony Wright
+
+
+Members Present: Michael, Jodie, Tony, Joel, Ben, Dimitar
+
+
+Members Not Present: none
+
+
+Summary of Conversation:
+
+The meeting began by addressing preperation for the client meeting, discussing the flow of the demonstration and determining who will be taking what roles: 
+          -Michael, demonstration coordinator - Introduction, explaining what will/won't be demonstrated
+          -Tony, demonstration of website front end
+          -Jodie, demonstration of restricting the search back end
+          -Ben, demonstration of searching by location back end
+          
+Also, what was needing to be completed ready for the demonstration
+
+-Tony, as connecting the HTML and Java to display results is still in progress and will not be completead before the demonstration, I will add example outputs to the website for demonstration purposes, then format map after implementation
+
+-Michael, embed the map onto the demonstration website, completed working search results demonstration
+
+-Ben, prepare back end search results for the demonstration
+
+-Jodie, prepare back end search results for the demonstration
+
+         
+After, we discussed the submission, what was required and organised what was left to do:
+
+          -Tony + Jodie pair programming
+          -Ben + Joel pair programming
+          -Joel sprint backlog charts
