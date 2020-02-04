@@ -1,4 +1,4 @@
-#Sprint 2 All information about the first sprint can be found in this folder.
+## Sprint 2 All information about the first sprint can be found in this folder.
 
 Day [1] - Scrum Meeting summary
 The Scrum Master for this meeting was Jodie Laurenson
