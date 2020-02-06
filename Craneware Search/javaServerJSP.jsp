@@ -78,7 +78,7 @@
               }
               </script>
 
-              <form class="form-inline" style="margin-left:2rem" method="get">
+              <form class="form-inline" style="margin-left:2rem" method="get" >
 
                 <div class="md-form mt-0">
                   <input class="form-control" type="text" placeholder="Search by hospital name..." aria-label="Search" style="width: 15rem; margin-left: 0.5rem;" id="nameInputSearch" >
@@ -326,11 +326,7 @@
             if(search!=null){
                 System.out.println("not null");
             
-            System.out.println("line 316");
-            if(search[0]!=null){
-                System.out.println("not null");
-            
-                ResultSet result = db.runSearchAddressP(search[0]);
+                ResultSet result = db.runSearchConditionP(search[0]);
             //String[] conditions = db.parseCondition(result);
             //String[] addresses = db.parseAddress(result);
             //String[] provNames = db.parseProviderName(result);
@@ -384,3 +380,6 @@
    </body>
 
 </html>
+<!--
+            
+
